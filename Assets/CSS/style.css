@@ -1,4 +1,5 @@
 *{
+    box-sizing: border-box;
     margin: 0;
 }
 
@@ -22,33 +23,23 @@ header,footer{
     background-color: var(--darkpurple);
     color: var(--white);
     width: 100%;
-    height: 60px;
     padding: 10px;
     border: 10px solid var(--darkerpurple);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 footer{
     bottom: 0;
     justify-content: center;
-    text-align: center;
-}
-
-nav{
-    display: flex;
-    justify-content: flex-end;
-}
-
-a{
-    color: var(--white);
-    text-decoration: none;
-    font-size: 30px;
-    margin: 10px 20px;
+    flex-direction: column;
     text-align: center;
 }
 
 footer a{
     font-size: 20px;
-    line-height: 50px;
+    margin: 0px;
 }
 
 h1{
@@ -59,23 +50,56 @@ h1{
 h2{
     width: 100%;
     font-size: 30px;
-    margin: 20px 50px;
+    margin: 30px 50px;
 }
 
-p{
-    width: 100%;
+h3{
+    font-size: 25px;
+    margin: 0px 15px 15px;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 30px;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+p{  
+    width: 80%;
     margin: 30px 50px 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    width: 75%;
+    height: 75%;
+    object-fit: scale-down;
 }
 
 .sections{
     border-top: 10px solid var(--darkerpurple);
     color: var(--white);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     text-align: left;
     background-color: var(--purple);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.description{
+    flex: 1;
+    width: 30%;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.bios img{
+    margin: 40px;
+    width: 40%;
+    height: 40%;
+    padding-bottom: 75px;
 }
 
 .previous-projects{
@@ -86,13 +110,45 @@ p{
 }
 
 .example{
-    padding: 20px;
+    padding: 30px;
     background-color: var(--lightpurple);
     color: black;
     border: 10px solid var(--darkpurple);
-    flex: 1 0 400px;
+    flex: 1 0 40%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .example p{
-    margin-left: 0px;
+    flex: 1;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) 
+{
+    .sections{
+        justify-content: center;
+    }
+    
+    .description{
+        width: 100%;
+    }
+    .bios img{
+        width: 75%;
+        margin: 50px;
+    }
+    
+    .example{
+        flex: 1 0 100%;
+    }
+
+    .example img{
+        width: 100%;
+        height: 400px;
+    }
+    .example p{
+        width: 100%;
+    }
 }
