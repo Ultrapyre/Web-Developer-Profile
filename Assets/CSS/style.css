@@ -6,7 +6,7 @@
 :root{
     --darkpurple: #4b2865;
     --darkerpurple: #231325;
-    --purple: #a1299f;
+    --purple: #ac7dab;
     --white: #dcf1f2;
     --lightpurple: #d5bde0;
 }
@@ -48,14 +48,13 @@ h1{
 }
 
 h2{
-    width: 100%;
     font-size: 30px;
     margin: 30px 50px;
 }
 
 h3{
-    font-size: 25px;
-    margin: 0px 15px 15px;
+    font-size: 30px;
+    margin: 20px 15px;
 }
 
 a{
@@ -73,8 +72,8 @@ p{
 }
 
 img{
-    width: 75%;
-    height: 75%;
+    border: 10px solid var(--darkerpurple);
+    width: 90%;
     object-fit: scale-down;
 }
 
@@ -85,7 +84,7 @@ img{
     background-color: var(--purple);
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .description{
@@ -99,31 +98,30 @@ img{
     margin: 40px;
     width: 40%;
     height: 40%;
-    padding-bottom: 75px;
 }
 
 .previous-projects{
-    background-color: var(--darkerpurple);
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
+    width: 90%;
 }
+
 
 .example{
     padding: 30px;
     background-color: var(--lightpurple);
     color: black;
     border: 10px solid var(--darkpurple);
-    flex: 1 0 40%;
     margin: 10px;
+    width: 30%;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.example p{
-    flex: 1;
-    width: 50%;
+.featured{
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) 

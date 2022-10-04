@@ -1,8 +1,12 @@
 # Web-Developer-Profile
 A convenient spot to put all my creations in HTML in. Will add more as time passes.
 
-Version 1.0 changelog:
+Also being updated as my skillset improves so it looks less horrifying to look at.
 
-* Slapped a rudimentary skeleton together.
-* Added functioning links... well, three, to be exact.
-* Added flex funtionality so it doesn't look even uglier when resized.
+# Screenshot:
+
+![The current layout of the website, not finalized.](./Assets/Images/Website%20layout.png)
+
+# Link:
+
+https://ultrapyre.github.io/Web-Developer-Profile/
